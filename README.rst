@@ -3,7 +3,7 @@
 
 edc-microscopy
 --------------
-Microcopy model mixins in clinicedc/edc projects
+Microscopy model mixins in clinicedc/edc projects
 
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-microscopy.svg
@@ -17,4 +17,3 @@ Microcopy model mixins in clinicedc/edc projects
 
 .. |downloads| image:: https://pepy.tech/badge/edc-microscopy
    :target: https://pepy.tech/project/edc-microscopy
-
