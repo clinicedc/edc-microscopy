@@ -4,7 +4,6 @@ from edc_crf.fieldset import crf_status_fieldset
 
 
 class MalariaTestModelAdminMixin:
-
     form = None
 
     fieldsets = (
