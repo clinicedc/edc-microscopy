@@ -6,7 +6,6 @@ from ..choices import MALARIA_TEST_CHOICES
 
 
 class MalariaTestModelMixin(models.Model):
-
     performed = models.CharField(
         verbose_name="Was the malaria test performed?",
         max_length=15,
