@@ -24,7 +24,7 @@ class MalariaTestModelAdminMixin:
         audit_fieldset_tuple,
     )
 
-    radio_fields = {
+    radio_fields = {  # noqa: RUF012
         "performed": admin.VERTICAL,
         "diagnostic_type": admin.VERTICAL,
         "result": admin.VERTICAL,
