@@ -13,7 +13,7 @@ class MalariaTestModelMixin(models.Model):
     )
 
     not_performed_reason = models.CharField(
-        verbose_name="If NO, provide reason", max_length=150, null=True, blank=True
+        verbose_name="If NO, provide reason", max_length=150, default="", blank=True
     )
 
     diagnostic_type = models.CharField(
