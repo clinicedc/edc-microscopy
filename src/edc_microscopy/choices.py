@@ -1,4 +1,4 @@
-from edc_constants.constants import MICROSCOPY, NOT_APPLICABLE, RAPID_TEST
+from clinicedc_constants import MICROSCOPY, NOT_APPLICABLE, RAPID_TEST
 
 MALARIA_TEST_CHOICES = (
     (RAPID_TEST, "Rapid test"),

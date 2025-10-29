@@ -1,6 +1,6 @@
+from clinicedc_constants import NOT_APPLICABLE
 from django.db import models
 from edc_constants.choices import PRESENT_ABSENT_NA, YES_NO
-from edc_constants.constants import NOT_APPLICABLE
 
 from ..choices import MALARIA_TEST_CHOICES
 
