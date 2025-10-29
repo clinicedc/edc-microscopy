@@ -144,7 +144,7 @@ test = [
     "time-machine>=2.16.0",
     "tqdm>=4.67.1",
     "edc-test-settings>=1.1.2",
-    "clinicedc-tests>=0.1.6",
+    "clinicedc-tests>=0.3.0",
 ]
 
 
