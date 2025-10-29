@@ -4,11 +4,13 @@ from pathlib import Path
 from clinicedc_tests.config import DefaultTestSettings, get_installed_apps_for_tests
 
 app_name = "edc_microscopy"
-base_dir = Path(__file__).absolute().parent.parent.parent
+base_dir = Path(__file__).absolute().parent.parent
 
 project_settings = DefaultTestSettings(
     calling_file=__file__,
     BASE_DIR=base_dir,
+    ETC_DIR=base_dir / "tests" / "etc",
+    DJANGO_CRYPTO_FIELDS_KEY_PATH=base_dir / "tests" / "etc",
     APP_NAME=app_name,
     SILENCED_SYSTEM_CHECKS=[
         "sites.E101",
