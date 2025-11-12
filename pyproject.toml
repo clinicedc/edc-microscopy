@@ -9,7 +9,7 @@ namespace = false
 
 [project]
 name = "edc-microscopy"
-version = "1.4.1"
+version = "1.4.2"
 description = "Microscopy model mixins in clinicedc/edc projects"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 license = "GPL-3.0-or-later"
@@ -142,5 +142,5 @@ dev = [
 edc-csf = { workspace = true }
 clinicedc = { path = "../clinicedc", editable = true }
 clinicedc-tests = { path = "../clinicedc-tests", editable = true }
-edc-test-settings = { path = "../edc-test-settings", editable = true }
-django-crypto-fields = { path = "../django-crypto-fields", editable = true }
+# edc-test-settings = { path = "../edc-test-settings", editable = true }
+# django-crypto-fields = { path = "../django-crypto-fields", editable = true }
