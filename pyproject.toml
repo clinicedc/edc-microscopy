@@ -9,7 +9,7 @@ namespace = false
 
 [project]
 name = "edc-microscopy"
-version = "1.4.0"
+version = "1.4.1"
 description = "Microscopy model mixins in clinicedc/edc projects"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 license = "GPL-3.0-or-later"
