@@ -1,5 +1,5 @@
 [build-system]
-requires = ["uv_build>=0.9.0"]
+requires = ["uv_build>=0.10.0,<0.12.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
@@ -9,9 +9,9 @@ namespace = false
 
 [project]
 name = "edc-microscopy"
-version = "1.4.3"
+version = "1.4.4"
 description = "Microscopy model mixins in clinicedc/edc projects"
-readme = {file = "README.rst", content-type = "text/x-rst"}
+readme = { file = "README.rst", content-type = "text/x-rst" }
 license = "GPL-3.0-or-later"
 license-files = ["LICEN[CS]E*"]
 requires-python = ">=3.12,<3.14"
@@ -33,12 +33,13 @@ classifiers = [
     "Framework :: Django :: 5.2",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
-dependencies = []
+dependencies = [
+    "clinicedc>=2.9.4",
+]
 
 [project.urls]
 Homepage = "https://github.com/clinicedc/edc-microscopy"
@@ -93,7 +94,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-    "__init__.py" = ["F401"]
+"__init__.py" = ["F401"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 12
@@ -117,8 +118,8 @@ show_missing = true
 skip_covered = true
 omit = ["*.txt", "*/migrations/*"]
 exclude_lines = [
-  "pragma: no cover",
-  "if TYPE_CHECKING:",
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
 ]
 
 [dependency-groups]
@@ -134,13 +135,10 @@ docs = [
 ]
 
 dev = [
-    "clinicedc>=2.1.1",
     "clinicedc-tests>=1.0.0",
 ]
 
 [tool.uv.sources]
-edc-csf = { workspace = true }
+edc-microscopy = { workspace = true }
 clinicedc = { path = "../clinicedc", editable = true }
 clinicedc-tests = { path = "../clinicedc-tests", editable = true }
-# edc-test-settings = { path = "../edc-test-settings", editable = true }
-# django-crypto-fields = { path = "../django-crypto-fields", editable = true }
