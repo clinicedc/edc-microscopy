@@ -40,7 +40,7 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-    "clinicedc>=2.9.4",
+    "clinicedc>=3.0.0",
 ]
 
 [project.urls]
@@ -137,7 +137,7 @@ docs = [
 ]
 
 dev = [
-    "clinicedc-tests>=1.0.0",
+    "clinicedc-tests>=1.2.2",
 ]
 
 [tool.uv.sources]
