@@ -9,12 +9,12 @@ namespace = false
 
 [project]
 name = "edc-microscopy"
-version = "1.4.4"
+version = "1.5.0"
 description = "Microscopy model mixins in clinicedc/edc projects"
 readme = { file = "README.rst", content-type = "text/x-rst" }
 license = "GPL-3.0-or-later"
 license-files = ["LICEN[CS]E*"]
-requires-python = ">=3.12,<3.14"
+requires-python = ">=3.12,<3.15"
 authors = [
     { name = "Erik van Widenfelt", email = "ew2789@gmail.com" },
 ]
@@ -31,11 +31,13 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Framework :: Django",
     "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.0",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
     "clinicedc>=2.9.4",
